@@ -11,8 +11,10 @@
 <body>
     <header>
         <div>CSE110 team 5 meeting notes</div>
+        <!-- a set of navigation links -->
         <nav>
             <ul>
+                <!-- a is a hyperlink -->
                 <li><a href="#week3meeting">week3meeting</a></li>
                 <li><a href="#week4meeting">week4meeting</a></li>
                 <li><a href="#week5meeting">week5meeting</a></li>
@@ -20,61 +22,182 @@
         </nav>
     </header>
 
+    <!-- a thematic break in an HTML page (e.g. a shift of topic) -->
+    <hr>
+
     <main>
         
         <h1 id = "week3meeting" style = "color:red;">
             Week3:
         </h1>
-        <h2>
-            brainstorming:
+        <p>
+
+            <span style="color:blue">
+                brainstorming:
+            </span>
             <br>
-            checkins:
+            <span style="color:blue;">
+                checkins:
+            </span>
+            
             <br>
-            documentation:
-        </h2>
+            <span style="color:blue;">
+                documentation:
+            </span>
+        </p>
         
             
-        <br>
-        Date:
-        <br>
+        <div>
+        <b>Date: 2022/10/7</b>
+        
+        </div>
+        <div>
         Attendance list:
-        <ol>
+        </div>
+        <ul>
             <li><input type="checkbox" /> Aaron</li>
-            <li><input type="checkbox" /> </li>
-            <li><input type="checkbox" /> </li>
-            <li><input type="checkbox" /> </li>
-            <li><input type="checkbox" /> </li>
-            <li><input type="checkbox" /> </li>
-            </ol>
+            <li><input type="checkbox" /> B</li>
+            <li><input type="checkbox" /> C</li>
+            <li><input type="checkbox" /> D</li>
+            <li><input type="checkbox" /> E</li>
+            <li><input type="checkbox" /> F</li>
+        </ul>
+        
         <section>
-        <h4>Agenda:</h4>
-        <p>Today's agenda will be:</p>
+            1. Agenda:
+            <p>
+                <ol>            
+                    <li>  bcd </li>
+                    <li>  efg </li>
+                    <li>  hijk </li>
+                </ol>
+            </p>
         </section>
 
         <section>
-            <h4>Unfinished business from last meeting:</h4>
-            <p>something</p>
+            2. Unfinished business from last meeting:
+            <p>We need to be familiar with <i>HTML</i>.</p>
         </section>
 
         <section>
-            <h4>New business that need to be talked about:</h4>
-            <p>something</p>
+            <div>
+                3. New business that need to be talked about: 
+            </div>
+            <p>
+                <span> 
+                    We need to emphasize <em>this</em>.  
+                </span>
+            </p>
+            <p>
+                This is 
+                    <strong>
+                    something important.
+                    </strong>
+            </p>
         </section>
 
         <section>
-            <h4>Miscellaneous comments / questions / concerns:</h4>
+            4. Miscellaneous comments / questions / concerns:
             <p>something</p>
         </section>
 
         
-        Pictures of any diagrams/architecture/things that were presented:
+        5. Pictures of any diagrams/architecture/things that were presented:
         <br>
-        Audio elements:
+        <img src="/images/bear.JPG" alt="Warren Bear" width="180" height="200">
         <br>
-        Video elements:
-
+        6. Audio elements:
+        <br>
+        <audio controls>
+            <source src="/audio/Free_Test_Data_100KB_OGG.ogg" type="audio/ogg">
+            <source src="/audio/Free_Test_Data_100KB_MP3.mp3" type="audio/mpeg">
+            <source src="/audio/Free_Test_Data_500KB_WAV.wav" type="audio/mpeg">
+            Your browser does not support the audio element.
+          </audio>
+        <br>
+        7. Video elements:
+        <br>
         
+        <video width="320" height="240" controls>
+            <source src="/video/file_example_MP4_480_1_5MG.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+          </video>
 
+        <br>
+           
+        <p>
+            <details>
+                <summary>Summary for today's meeting:</summary>
+                <p>We have talked about how to succeed in this class.</p>
+            </details>
+        </p>
+        <br>
+
+        <h2>
+            Forms:
+        </h2>
+        <p>
+            <textarea name="input" rows="4" cols="50">Input for a box</textarea>
+        </p>
+        <form>
+            <input type="checkbox">
+            A
+            <!-- <br> -->
+            <input type="checkbox">
+            B
+            <br>
+            <input type="checkbox">
+            C
+            <input type="checkbox">
+            D
+            <br>
+            <input type="submit" value="Submit !">
+        </form>    
+            
+        <br>
+
+            <fieldset>
+                <form>
+                <legend>Input:</legend>
+                <br>
+                <label>First name:</label>
+                <input type="text"><br><br>
+                <label>Last name:</label>
+                <input type="text" ><br><br>
+                <label for="email">Email:</label>
+                <input type="email"><br><br>
+                <label>time:</label>
+                <input type="date"><br><br>
+                <input type="submit" value="Submit">
+               </fieldset>
+        </form>
+
+        <br>
+        <form>
+            <input list="options">
+                <datalist id="options">
+                <option value="A">
+                <option value="B">
+                <option value="C">
+                <option value="D">
+                <option value="E">
+                </datalist>
+            <input type="submit">
+        </form>
+
+        <br>
+        <form>
+        <label for="OPTION">Choose something:</label>
+            <select name="OPTION" id="OPTION">
+                <option value="A">A</option>
+                <option value="B">B</option>
+                <option value="C">C</option>
+                <option value="D">D</option>
+            </select>
+        </form>
+<hr>
+
+<button type="button">Done!</button>
     </main>
 
     <footer>
