@@ -1,0 +1,91 @@
+/* this is externel css stylesheet */
+h2 {
+    /* color element */
+    color: blueviolet;
+    font-size: 20px; 
+    width: 500px;
+    margin: 25px 10px 10px 20px;
+    
+}
+
+h3{
+    /* color element */
+    color:rgb(0,0,0);
+    width: 1000vw;
+    
+}
+
+h4{
+    /* color element */
+    color:hals(0,0,0,0);
+    font-size: 1.3em;
+    width: 100mm;
+}
+
+h5{
+    /* color element */
+    color:#000;
+    font-size: 1.3rem;
+
+}
+
+body {
+    background-color: rgb(140, 223, 234);
+}
+
+.box {
+    border-style: dashed;
+    border-color: blue;
+    border-radius: 3px;
+    border-width:5mm;
+    border: 3px solid black;
+    padding: 25px;
+    display: block;
+    list-style: none;
+    width: 150px;
+    height: 150px;
+    margin: 10px;
+}
+
+.table{
+    border-radius: 5px;
+    border-top-right-radius: 1em 10%;
+    border: 10px solid rebeccapurple;
+    /* spacing within html elements */
+    padding-top : 10px;
+    padding-right : 25px;
+    padding-bottom : 25px;
+    padding-left : 25px;
+}
+
+.box2 {
+    text-decoration: underline overline;
+    text-align: center;
+
+    margin-top: 30px;
+    /* borders around html elements, hint: apply borders before testing out 
+    padding and margin to better understand the difference between the two */
+    border-style: dotted;
+    border-radius: 5px;
+    border-top-right-radius: 1em 10%;
+    border: 10px solid rebeccapurple;
+    /* spacing within html elements */
+    padding-top : 10px;
+    padding-right : 25px;
+    padding-bottom : 25px;
+    padding-left : 25px;
+}
+
+p {
+    /* spacing between html elements */
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-right: 150px;
+    margin-left: 80px;
+    margin: auto
+    
+  }
+
+.static{
+    margin: 20pt;
+}
