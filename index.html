@@ -6,8 +6,93 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CSE110 team 5 meeting notes Fall 2023 @ UCSD</title>
     <link rel = "icon" href="/images/cute-hamster.png">
-    
+    <link rel = "stylesheet" href = "styles.css">
 </head>
+<style>
+
+@media (width: 360px) {
+  div {
+    color: red;
+  }
+}
+
+@font-face {
+   font-family: myFirstFont;
+   src: url(Sansation_Regular.ttf);
+}
+
+* {
+   font-family: myFirstFont;
+}
+
+    button:hover {
+    color: hotpink;
+    }
+    button:active{
+        color:aqua;
+    }
+
+    p {color:black;}
+
+
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  background-color: #d46810;
+  padding: 10px;
+}
+.grid-item {
+  background-color: rgba(255, 255, 255, 0.8);
+  border: 1px solid rgba(0, 0, 0, 0.8);
+  padding: 20px;
+  font-size: 30px;
+  text-align: center;
+}
+
+
+    p.ex1 { 
+        display: none;
+        max-width: 150px;
+        max-height: 150px;
+        }
+    p.ex2 {display: inline;}
+    p.ex3 {display: block;}
+    p.ex4 {display: inline-block;}
+
+    div.relative {
+        position: relative;
+        width: 400px;
+        height: 200px;
+        border: 3px solid #ad4921;
+        } 
+
+    div.absolute {
+        position: absolute;
+        top: 50px;
+        right: 0;
+        width: 200px;
+        height: 100px;
+        border: 3px solid #2131ad;
+    }
+
+    div.static {
+        position: static;
+        border: 3px solid #73AD21;
+    }
+    .flex-container {
+        display: flex;
+        background-color: DodgerBlue;
+        }
+
+    .flex-container > div {
+        background-color: #f1f1f1;
+        margin: 10px;
+        padding: 10px;
+        font-size: 10px;
+    }
+
+</style>
+
 <body>
     <header>
         <div>CSE110 team 5 meeting notes</div>
@@ -208,5 +293,98 @@
     <footer>
         <h6>Footer</h6>
     </footer>
+
+
+    <!-- inline CSS -->
+    <h1 style = "color:blue;" id = "week4meeting" >
+        Week4:
+    </h1>
+
+    <p style="color:red;">
+         This is another paragraph.
+    </p>
+
+    <!-- this is the internel css -->
+    <style>
+        body {background-color: powderblue;}
+    </style>
+    
+    <div class="box">
+        This is a box.
+    </div>
+
+    <div class="table">
+        <h2>Borders</h2>
+        <p>Try changing the borders.</p>
+      </div>
+
+    <div class="box2">
+        <h2>Borders</h2>
+        <p>This is another box.</p>
+    </div>
+
+    <div class="static">
+        
+        This div element has position: static;
+    </div>
+    
+
+    <div class="relative">This div element has position: relative;
+        <div class="absolute">This div element has position: absolute;</div>
+      </div>
+
+
+    <div class="flex-container">
+    <div>1</div>
+    <div>2</div>
+    <div>3</div>  
+    <div>4</div>
+    <div>5</div>
+    </div>
+
+
+    <div class="grid-container">
+        <div class="grid-item">1</div>
+        <div class="grid-item">2</div>
+        <div class="grid-item">3</div>  
+        <div class="grid-item">4</div>
+        <div class="grid-item">5</div>
+        <div class="grid-item">6</div>  
+        <div class="grid-item">7</div>
+        <div class="grid-item">8</div>
+        <div class="grid-item">9</div>  
+      </div>
+
+
+    
+    <h3>display: none:</h3>
+    <div>
+        This is 
+    <p class="ex1">"HELLO WORLD"</p>
+        !!!
+    </div>
+
+    <h3>display: inline:</h3>
+    <div>
+        This is 
+    <p class="ex2">"HELLO WORLD"</p>
+        !!!
+    </div>
+
+    <h3>display: block:</h3>
+    <div>
+        This is 
+    <p class="ex3">"HELLO WORLD"</p>
+        !!!
+    </div>
+
+    <h3>display: inline-block:</h3>
+    <div>
+        This is 
+    <p class="ex4">"HELLO WORLD"</p>
+        !!!
+    </div>
+
+
 </body>
 </html>
