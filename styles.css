@@ -1,4 +1,106 @@
 /* this is externel css stylesheet */
+a[target]{
+    background-color: yellow;
+}
+
+#firstname{
+    background-color: yellow;
+}
+
+*{
+    color : black;
+}
+/* Responsiveness       /* make your website friendly for multiple devices */
+
+
+@media (width: 360px) {
+div {
+color: red;
+}
+}
+
+@font-face {
+font-family: myFirstFont;
+src: url(Sansation_Regular.ttf);
+}
+
+/* Universal Selector (*) */
+* {
+font-family: myFirstFont;
+}
+
+/*Pseudo-class Selector (e.g. p:hover)*/
+button:hover {
+color: hotpink;
+}
+
+button:active{
+    color:aqua;
+}
+
+p {color:black;}
+
+
+/*Class Selector (.class)*/
+.grid-container {
+display: grid;
+grid-template-columns: auto auto auto;
+background-color: #d46810;
+padding: 10px;
+}
+.grid-item {
+background-color: rgba(255, 255, 255, 0.8);
+border: 1px solid rgba(0, 0, 0, 0.8);
+padding: 20px;
+font-size: 30px;
+text-align: center;
+}
+
+
+p.ex1 { 
+    display: none;
+    max-width: 150px;
+    max-height: 150px;
+    }
+p.ex2 {display: inline;}
+p.ex3 {display: block;}
+p.ex4 {display: inline-block;}
+
+/*Combining Two Selectors (element.class)*/
+div.relative {
+    position: relative;
+    width: 400px;
+    height: 200px;
+    border: 3px solid #ad4921;
+    } 
+
+div.absolute {
+    position: absolute;
+    top: 50px;
+    right: 0;
+    width: 200px;
+    height: 100px;
+    border: 3px solid #2131ad;
+}
+
+div.static {
+    position: static;
+    border: 3px solid #73AD21;
+}
+.flex-container {
+    display: flex;
+    background-color: DodgerBlue;
+    }
+
+.flex-container > div {
+    background-color: #f1f1f1;
+    margin: 10px;
+    padding: 10px;
+    font-size: 10px;
+}
+
+
+
 h2 {
     /* color element */
     color: blueviolet;
@@ -6,7 +108,7 @@ h2 {
     width: 500px;
     margin: 25px 10px 10px 20px;
     
-    
+
 }
 
 h3{
@@ -35,6 +137,8 @@ body {
 }
 
 .box {
+    /* borders around html elements, hint: apply borders before testing out 
+    padding and margin to better understand the difference between the two */
     border-style: dashed;
     border-color: blue;
     border-radius: 3px;
@@ -90,3 +194,25 @@ p {
 .static{
     margin: 20pt;
 }
+
+span {
+    background-color: aqua;
+  }
+  
+  /*Combinators*/
+  div > span {
+    background-color: yellow;
+  }
+
+
+  div + p {
+    background-color: yellow;
+  }
+
+  div ~ p {
+    background-color: yellow;
+  }
+
+  div p {
+    background-color: rgb(0, 229, 255);
+    }
